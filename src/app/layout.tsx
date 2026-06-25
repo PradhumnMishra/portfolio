@@ -1,0 +1,55 @@
+import type { Metadata } from "next";
+import { Plus_Jakarta_Sans, Outfit } from "next/font/google";
+import "./globals.css";
+import { LenisProvider } from "@/components/providers/LenisProvider";
+
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
+
+const plusJakarta = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: "Pradhumn Mishra | AI Digital Marketer & Tranier",
+  description: "I scale brands through AI SEO, GEO, Google/Meta Ads, and Socail Media Marketing. 4+ years of driving revenue and high-quality leads.",
+  keywords: ["Pradhumn Mishra", "Digital Marketer", "AI SEO Specialist", "GEO Optimization", "Google Ads Expert", "Meta Ads Consultant", "Growth Marketer Portfolio", "Delhi NCR Marketer"],
+  authors: [{ name: "Pradhumn Mishra" }],
+  openGraph: {
+    title: "Pradhumn Mishra | AI Digital Marketer & Tranier",
+    description: "I scale brands through AI SEO, GEO, Google/Meta Ads, and Socail Media Marketing. 4+ years of driving revenue and high-quality leads.",
+    type: "website",
+    locale: "en_US",
+    siteName: "Pradhumn Mishra Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pradhumn Mishra | AI Digital Marketer & Tranier",
+    description: "I scale brands through AI SEO, GEO, Google/Meta Ads, and Socail Media Marketing. 4+ years of driving revenue and high-quality leads.",
+  }
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en">
+      <body className={`${plusJakarta.variable} ${outfit.variable} antialiased`}>
+        <LenisProvider>
+          {children}
+        </LenisProvider>
+      </body>
+    </html >
+  );
+}
