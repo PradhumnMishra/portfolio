@@ -302,7 +302,7 @@ export const caseStudies: CaseStudy[] = [
     description: "Trained 100+ students in digital marketing, covering SEO, SMO, and PPC campaign management.",
     stats: [
       { value: "100+", label: "Students Trained" },
-      { value: "3 Students", label: "Colleges Trained" }
+      { value: "3 Colleges", label: "Students Trained" }
     ]
   },
   {
