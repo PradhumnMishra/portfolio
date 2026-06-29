@@ -21,12 +21,12 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Pradhumn Mishra | AI Digital Marketer & Tranier",
+  title: "Pradhumn Mishra | AI Digital Marketer & Trainer",
   description: "I scale brands through AI SEO, GEO, Google/Meta Ads, and Socail Media Marketing. 4+ years of driving revenue and high-quality leads.",
   keywords: ["Pradhumn Mishra", "Digital Marketer", "AI SEO Specialist", "GEO Optimization", "Google Ads Expert", "Meta Ads Consultant", "Growth Marketer Portfolio", "Delhi NCR Marketer"],
   authors: [{ name: "Pradhumn Mishra" }],
   openGraph: {
-    title: "Pradhumn Mishra | AI Digital Marketer & Tranier",
+    title: "Pradhumn Mishra | AI Digital Marketer & Trainer",
     description: "I scale brands through AI SEO, GEO, Google/Meta Ads, and Socail Media Marketing. 4+ years of driving revenue and high-quality leads.",
     type: "website",
     locale: "en_US",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pradhumn Mishra | AI Digital Marketer & Tranier",
+    title: "Pradhumn Mishra | AI Digital Marketer & Trainer",
     description: "I scale brands through AI SEO, GEO, Google/Meta Ads, and Socail Media Marketing. 4+ years of driving revenue and high-quality leads.",
   }
 };

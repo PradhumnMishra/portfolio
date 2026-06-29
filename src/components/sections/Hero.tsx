@@ -175,8 +175,8 @@ export function Hero() {
 
             <br className="hidden sm:block" />
 
-            <span className="text-3xl sm:text-3xl font-medium md:text-6xl lg:text-7xl block sm:inline mt-1 sm:mt-0 text-brand-orange-800">
-              Digital Marketer & Trainer
+            <span className="text-2xl sm:text-3xl font-medium md:text-6xl lg:text-7xl block sm:inline mt-1 sm:mt-0 text-brand-orange-800">
+              AI Digital Marketer & Trainer
             </span>
           </h1>
         </motion.div>

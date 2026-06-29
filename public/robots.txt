@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://pradhumnmishra.online
+
+# Sitemaps
+Sitemap: https://pradhumnmishra.online/sitemap.xml
