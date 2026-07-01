@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { usePathname } from "next/navigation";
 
 const socials = [
   { name: "Facebook", href: "https://www.facebook.com/pradum789/", icon: FaFacebookF },
@@ -15,6 +16,7 @@ const socials = [
 export function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,13 +26,16 @@ export function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const isHome = pathname === "/";
+
   const links = [
-    { name: "Home.", href: "#" },
-    { name: "About.", href: "#about" },
-    { name: "Skills.", href: "#skills" },
-    { name: "Experience.", href: "#experience" },
-    { name: "Projects.", href: "#projects" },
-    { name: "Contact.", href: "#contact" },
+    { name: "Home.", href: isHome ? "#" : "/" },
+    { name: "About.", href: isHome ? "#about" : "/#about" },
+    { name: "Skills.", href: isHome ? "#skills" : "/#skills" },
+    { name: "Experience.", href: isHome ? "#experience" : "/#experience" },
+    { name: "Projects.", href: isHome ? "#projects" : "/#projects" },
+    { name: "Blog.", href: "/blog" },
+    { name: "Contact.", href: isHome ? "#contact" : "/#contact" },
   ];
 
   return (

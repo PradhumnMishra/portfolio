@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Outfit } from "next/font/google";
+import { Spectral } from "next/font/google";
 import "./globals.css";
 import { LenisProvider } from "@/components/providers/LenisProvider";
 import Script from "next/script";
@@ -8,15 +8,10 @@ import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 config.autoAddCss = false
 
-const plusJakarta = Plus_Jakarta_Sans({
-  variable: "--font-plus-jakarta",
+const spectral = Spectral({
+  variable: "--font-spectral",
   subsets: ["latin"],
-  display: "swap",
-});
-
-const outfit = Outfit({
-  variable: "--font-outfit",
-  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
   display: "swap",
 });
 
@@ -46,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${plusJakarta.variable} ${outfit.variable} antialiased`}>
+      <body className={`${spectral.variable} antialiased`}>
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-QJMNZYYKR5"
           strategy="afterInteractive"
