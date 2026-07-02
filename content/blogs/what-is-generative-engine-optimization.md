@@ -18,7 +18,7 @@ That's when it clicked for me: ranking and being cited are two different games n
 
 GEO stands for Generative Engine Optimization.
 
-It's the practice of structuring your content so AI systems like ChatGPT, Google AI Overviews, Perplexity, and Gemini can find it, understand it, and quote it in their generated answers.
+It's the practice of structuring your content so AI systems like ChatGPT, Google AI Overviews, Perplexity, Gemini and other AI Tools can find it, understand it, and quote it in their generated answers.
 
 Traditional SEO gets you a blue link. GEO gets you a citation inside an AI-written response, sometimes with no click at all.
 
